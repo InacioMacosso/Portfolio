@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <title>Portfolio Inacio Macosso</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .foto-perfil {
+      height: 200px;
+      width: 200px;
+      max-width: auto;
+      border-radius: 50%;
+    }
+
+    ul {
+      list-style: square inside;
+    }
+
+    .iconify {
+      width: 40px;
+      height: 40px;
+    }
+
+    .left {
+      text-align: left;
+      margin-top: -1rem;
+    }
+
+    /*exemplo*/
+    .container-img {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #000;
+    }
+
+    .container-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container-img .infos-hover {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      color: #fff;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .container-img .infos-hover i {
+      margin-top: 60px;
+      font-size: 50px;
+    }
+
+    .container-img .infos-hover p {
+      text-align: center;
+    }
+
+    .container-img:hover .infos-hover {
+      height: 100%;
+    }
+
+    .lienProjet:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inacio Macosso</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">À Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Home-->
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <img class="foto-perfil" src="images/Photo (1) (1).jpeg" alt="" srcset="" />
+        <h1 class="fw-light">Inacio Macosso</h1>
+        <p class="lead text-muted">Concepteur Développeur d'Applications</p>
+      
+          <a href="#contact" class="btn btn-dark my-2">Contact</a><br />
+          <div>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://github.com/InacioMacosso" class="wow fadeInUp animated" data-wow-delay=".1s"
+                  style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="linkedin.com/in/inacio-eric-lelo-macosso-207777154" class="wow fadeInUp animated"
+                  data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!--Profil-->
+  <section class="py-5 bg-info">
+    <div class="container">
+      <div class="row row-Gradient bg-danger rounded">
+        <div class="col text-center">
+          <a data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" aria-current="true"
+            class="btn middle btn-block active">Compétences</a>
+        </div>
+        <div class="col text-center">
+          <a data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-current="true"
+            class="btn middle btn-block">Formations</a>
+        </div>
+        <div class="col text-center">
+          <a data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-current="true"
+            class="btn middle btn-block active">Expérience</a>
+        </div>
+      </div>
+      <div id="carouselExampleControlsNoTouching" class="carousel slide row" data-bs-touch="false"
+        data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row bg-light m-2 mt-0 p-2 pb-4 pt-4">
+              <div class="col-md-4 text-center">
+                <h4>Langages</h4>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    HTML
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    CSS
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    JavaScript
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    PHP
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                    SQL
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                    JAVA
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <h4>Framworks</h4>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    Bootstrap
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                    Materialize
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    JQuery
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    VueJs
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    Symfony
+                  </div>
+                </div>
+                <div class="progress m-2 p-1 rounded-pill" style="height: 40px">
+                  <div class="
+                        progress-bar progress-bar-striped
+                        bg-dark
+                        rounded-pill
+                      " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    CodeIgniter
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <h4>Outils</h4>
+                <div class="row">
+                  <div class="col-md-3">
+                    <ul class="list-unstyled">
+                      <li>
+                        <span class="iconify" data-icon="vscode-icons:file-type-vscode" data-inline="true"></span>
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="simple-icons:notepadplusplus" data-inline="false"></span>
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="logos:phpstorm" data-inline="false"></span>
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="logos:intellij-idea" data-inline="false"></span>
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="simple-icons:androidstudio" data-inline="false"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="list-unstyled">
+                      <li>
+                        <span class="iconify" data-icon="logos:mariadb" data-inline="false"></span>
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="cib:mysql" data-inline="false"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="list-unstyled">
+                      <li>
+                        <span class="iconify" data-icon="cib:canva" data-inline="false"></span>
+                      </li>
+                      <li>
+                        <img src="images/Looping.svg" alt="" srcset="" />
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="grommet-icons:figma" data-inline="false"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="list-unstyled">
+                      <li>
+                        <img class="img-responsive" src="images/heidisql.png" alt="" srcset="" />
+                      </li>
+                      <li>
+                        <img class="img-responsive" src="images/wampserver.png" alt="" srcset="" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="
+                  row
+                  bg-light
+                  m-2
+                  mt-0
+                  p-2
+                  pb-5
+                  pt-4
+                  row-cols-1 row-cols-sm-2
+                  g-3
+                ">
+              <div class="col text-center">
+                <h4>Concepteur Développeur d'Applications</h4>
+                <h5>Titre professionnel de Niveau VI</h5>
+                <p>AFPA 2021</p>
+              </div>
+              <div class="col text-center">
+                <h4>Techniques de base du Développement d’Applications</h4>
+                <h5>Formation professionnalisante</h5>
+                <p>AFPA 2020</p>
+              </div>
+              <div class="col text-center">
+                <h4>
+                  Ms Perfectionnement Anglais Technique et Professionnel
+                </h4>
+                <h5>Formation professionnalisante</h5>
+                <p>PROMEO 2020</p>
+              </div>
+              <div class="col text-center">
+                <h4>Gestion des Entreprises</h4>
+                <h5>Licence</h5>
+                <p>Université 11 de Novembro 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row bg-light m-2 mt-0 p-2 row-cols-1 row-cols-md-2 g-3">
+              <div class="col text-center">
+                <h4>Agent d'Exploitation Logistique</h4>
+                <p class="small mb-4">
+                  <strong>Amazon (Boves/France)</strong> Août-décembre 2019
+                </p>
+                <ul class="left">
+                  <li>Préparation et expédition des commandes;</li>
+                  <li>
+                    Contrôle et Enregistrement Informatique des articles
+                    réceptionnés;
+                  </li>
+                  <li>Mise en stock des produits</li>
+                </ul>
+              </div>
+              <div class="col text-center">
+                <h4>Professeur des Ecoles</h4>
+                <p class="small mb-4">
+                  <strong>Ministère de l’Education(Cabinda/Angola)</strong>
+                  <span>Décembre 2012-Août 2017</span>
+                </p>
+                <ul class="left">
+                  <li>
+                    Préparer les cours et établir la progression pédagogique;
+                  </li>
+                  <li>
+                    Suivre les progrès des élèves et les aider
+                    individuellement;
+                  </li>
+                  <li>
+                    Concevoir les exercices et évaluer les connaissances des
+                    élèves
+                  </li>
+                </ul>
+              </div>
+              <div class="col text-center">
+                <h4>Professeur des Mathématiques</h4>
+                <p class="small mb-4">
+                  <strong>Ministère de l’Education(Lunda-Norte/Angola)</strong>
+                  <span>Décembre 2012-Août 2017</span>
+                </p>
+                <ul class="left">
+                  <li>
+                    Préparer les cours et établir la progression pédagogique
+                  </li>
+                  <li>Enseigner les Mathématiques au collège;</li>
+                  <li>
+                    Suivre les progrès des élèves et les aider
+                    individuellement;
+                  </li>
+                  <li>
+                    Concevoir les exercices et évaluer les connaissances des
+                    élèves
+                  </li>
+                </ul>
+              </div>
+              <div class="col text-center">
+                <h4>Formateur</h4>
+                <p class="small mb-4">
+                  <strong>Auto entrepreneur(Cabinda/Angola)</strong>
+                  <span>Mars 2013-Août 2017</span>
+                </p>
+                <ul class="left">
+                  <li>
+                    Préparer les cours et établir la progression pédagogique
+                  </li>
+                  <li>
+                    Préparer les candidats aux concours d'entrée à
+                    l'université;
+                  </li>
+                  <li>
+                    Suivre les progrès des étudiantss et les aider
+                    individuellement;
+                  </li>
+                  <li>Donner des cours de remise à niveau</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Portfolio-->
+  <section class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-Gradient bg-danger rounded">
+        <h4 class="text-center">Projets</h4>
+      </div>
+      <div class="
+            row row-cols-1 row-cols-sm-2 row-cols-md-3
+            g-3
+            bg-info
+            m-2
+            mt-0
+            p-2
+            pb-4
+            pt-4
+          ">
+        <div class="col projet mt-0 p-2 pt-4">
+          <div class="container-img">
+            <img src="images/VillageGreenHome.png" />
+            <div class="infos-hover">
+              <a class="lienProjet" href="#"><i class="fa fa-eye"></i></a>
+              <p>Site de vente en ligne réalisé avec Symfony5</p>
+            </div>
+          </div>
+          <h5 class="titulo mt-2">Village Green</h5>
+        </div>
+        <div class="col projet mt-0 p-2 pt-4">
+          <div class="container-img">
+            <img src="images/TvCabindaHome.png" />
+            <div class="infos-hover">
+              <a class="lienProjet" href="#"><i class="fa fa-eye"></i></a>
+              <p>Site d'actualités réalisé avec Symfony5</p>
+            </div>
+          </div>
+          <h5 class="titulo mt-2">TV Cabinda</h5>
+        </div>
+        <div class="col projet mt-0 p-2 pt-4">
+          <div class="container-img">
+            <img src="images/centroBoaformaHome.png" />
+            <div class="infos-hover">
+              <a class="lienProjet" href="#"><i class="fa fa-eye"></i></a>
+              <p>
+                Site de présentation d'une salle de sport réalisé avec
+                Materialize
+              </p>
+            </div>
+          </div>
+          <h5 class="titulo mt-2">Centro Boa Forma</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Contacts-->
+  <section class="contacto bg-info py-5" id="contact">
+    <div class="container">
+      <div class="row row-Gradient bg-danger rounded">
+        <h4 class="text-center">Contact</h4>
+      </div>
+      <div class="row bg-light m-2 mt-0 p-2 pb-4 pt-4">
+        <div class="col-md-6 offset-md-3">
+          <form action="" method="POST">
+            <div class="mb-1">
+              <label for="inputNom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="inputNom" aria-describedby="helpNom" />
+            </div>
+            <div class="mb-1">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="helpEmail" />
+            </div>
+            <div class="mb-1">
+              <label for="formControlTextarea" class="form-label">Message</label>
+              <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2 mb-1">
+              <button type="submit" class="btn btn-primary">Contacter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer>
+    <div class="text-center m-2">
+      <ul class="list-inline  p-2">
+
+        <li class="list-inline-item">
+          <a href="mailto:inacio.macosso@yahoo.com" class="wow fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp;">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="https://github.com/InacioMacosso" class="wow fadeInUp animated" data-wow-delay=".1s"
+            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href="linkedin.com/in/inacio-eric-lelo-macosso-207777154" class="wow fadeInUp animated"
+            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/8c86cd6b77.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
